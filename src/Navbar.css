@@ -1,0 +1,47 @@
+.navbar-container {
+  width: 95vw; /* Use viewport width unit to set the width to 95% of the viewport. */
+  margin: 0 auto; /* Center the navbar container */
+  padding: px 2.5vw; /* Padding for top/bottom and left/right. */
+  background-color: white; /* Deep Blue background color for the navbar */
+}
+
+.website-title {
+  margin: 20px 0;
+  color: black; /* Change title color to white for better contrast with deep blue background */
+  text-align: left;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #386475; /* Sky blue color for the underline on hover */
+}
+
+.active-link {
+  color: #98FB98; /* Pale Green color for the active link */
+}
+
+.website-description {
+  margin-left: 20px;
+  color: white; /* Change description color to white for better contrast */
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+body {
+  padding-top: 70px; /* 这是Navbar的估计高度，根据实际情况调整 */
+}
+
+.AppBar {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* 添加一个阴影效果 */
+}
+
+.Toolbar{
+  display: flex;
+  justify-content:space-around;
+}
