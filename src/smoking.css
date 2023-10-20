@@ -1,0 +1,138 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;  /* 这给出了1.6倍的基本字体大小的行高 */
+    margin: 0 auto;
+}
+
+p {
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 50px;
+    transition: width 0.3s;
+}
+
+.sidebar:hover {
+    width: 250px;
+}   
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    background-color: #A9A9A9; 
+    border-radius: 50px;   
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sidebar li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar a {
+    color: transparent;   
+    padding: 10px 20px;
+    width: 85%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, width 0.3s, color 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar:hover a {
+    color: white; 
+}
+
+.sidebar li a {
+    border-radius: 40px;  
+    transition: background-color 0.3s;  
+}
+
+.sidebar li.selected a {
+    background-color: #4E9064;  
+}
+
+.sidebar:not(:hover) a.selected {
+    color: transparent;  /* 保证在sidebar未展开时，选中的链接文字不显示 */
+}
+.sidebar:not(:hover) a.selected {
+    color: transparent !important;
+}
+
+
+/* 在sidebar未展开时，隐藏所有链接的内容，仅显示背景颜色 */
+.sidebar:not(:hover) a::before {
+    display: none;
+}
+
+/* 在sidebar展开时，显示链接的内容 */
+.sidebar:hover a::before {
+    display: inline-block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+.blue-word {
+    color: #1dd7d7;
+}
+.green-word {
+    color: green;
+}
+
+.orange-word {
+    color: orange;
+}
+
+.image-container-smoking{
+    background-color: #e0e0e0!important;  /* 更深的淡灰色背景 */
+    padding: 20px;
+    border-radius: 15px;  /* 圆角边框 */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* 或使用固定的px值，例如 width: 500px; */
+}
+
+.smoking-image-container {
+    background-image: url('/smoking/lung_cancer.jpg');  /* 设置背景图片的路径 */
+    background-repeat: no-repeat;  /* 保证图片不重复 */
+    background-size: cover;  /* 确保图片覆盖整个容器 */
+    background-position: center;  /* 使图片居中 */
+    /* 其他样式，如padding、border等 */
+}
+
+
+
+
+
+
+
+
